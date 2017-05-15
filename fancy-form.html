@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validating Forms</title>
+
+	<!-- <link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="validate.js"></script>
+
+	<style>
+
+	
+		form{
+			border: 5px solid #E5E5E5;
+			border-radius: 5%;
+			padding: 10px;
+		}
+
+		h1{
+			color: white;
+			background-color: #2a88ac;
+			padding: 20px;
+			border-radius: 10px 10px 0px 0px;
+		}
+
+		.header-font{
+			font-size: 15px;
+		}
+		.number{
+			font-size: 15px;
+			color: white;
+			background-color: #2a88ac;
+			padding: 5px;
+			border-radius: 50%;
+		}
+
+		.section{
+			color: #2a88ac;
+			font-size: 20px;
+
+		}
+		.form-wrapper{
+			background-color: #E5E5E5;
+			padding: 10px;
+		}
+		#text-box{
+			width: 500px;
+			border-radius: 10px;
+		}
+		#last-div{
+			border-radius: 0px 0px 10px 10px;
+		}
+		.error{
+			color: red;
+		}
+	</style>
+
+
+
+</head>
+<body>
+<div class="container">
+
+	<form class="sign-up-form col-md-offset-3 col-md-6">
+
+		<h1>Sign up now!<br><span class="header-font">Sign up for the dev job of your dreams!</span></h1>
+
+		<div class="section">
+			<span class="number">&nbsp;1&nbsp;</span>&nbsp;First Name & Address
+		</div>
+
+		<div class="form-wrapper">
+			<div class="error full-name-error"></div>	
+			<label>Your full name<br><input type="text" class="fullName" id="text-box" placeholder="Your Full Name">
+			</label>
+		</div>
+
+		<div class="form-wrapper">
+			<div class="error address-error"></div>	
+			<label>Address<br><input type="text" class="address" id="text-box" placeholder="Your Address">
+			</label>
+		</div>
+
+		<div class="section">
+			<span class="number">&nbsp;2&nbsp;</span>&nbsp;Contact Info
+		</div>
+
+		<div class="form-wrapper">
+			<div class="error email-error"></div>		
+			<label>Email<br><input type="email" class="email" id="text-box" placeholder="Your email address">
+			</label>
+		</div>
+		<div class="form-wrapper">
+			<div class="error phone-error"></div>		
+			<label>Phone<br><input type="text" class="phone" id="text-box" placeholder="Your Phone Number">
+			</label>
+		</div>
+
+		<div class="section">
+			<span class="number">&nbsp;3&nbsp;</span>&nbsp;Password
+		</div>
+		<div class="form-wrapper">
+			<div class="error password-error"></div>
+			<label>Password<br><input type="password" class="password" id="text-box" placeholder="Password must be 6 characters">
+			</label>
+		</div>
+		<div class="form-wrapper">
+			<div class="error password2-error"></div>		
+			<label>Password Confirmation<br><input type="password" class="password2" id="text-box" placeholder="Confrim password">
+			</label>
+		</div>
+
+		<div class="section">		
+			<span class="number">&nbsp;4&nbsp;</span>&nbsp;Skills
+		</div>
+		<div class="form-wrapper">
+			<div class="error mySkills-error"></div>		
+			<label>My Tech Skills<br><input type="text" class="mySkills" id="text-box" placeholder="Enter your skills">
+			</label>
+		</div>
+		<div class="form-wrapper">
+			<div class="error years-error"></div>		
+			<label>Years of Experience<br><input type="number" class="years" id="text-box" placeholder="Years of XP">
+			</label>
+		</div>
+
+		<div class="form-wrapper" id="last-div">
+			<input type="submit" class="submit" id="text-box" value="Get me a job!"><br>
+			<input type="checkbox" class="privacy">&nbsp;&nbsp;I agree to the terms and policies
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
